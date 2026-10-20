@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- DEVELOPER: HAYFORD EDOONU | Phone: +233553246379 | Email: edoonu@gmail.com -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NIMOX ENTERPRISE – Inventory</title>
+<script>try{var t=localStorage.getItem('nimox_theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap bar">
+  <a class="brand" href="index.html"><span class="mark">N</span><span>NIMOX ENTERPRISE<small>Inventory</small></span></a>
+  <div class="acts"><button id="theme" type="button" class="ghost" aria-label="Switch between dark and light theme"></button><a class="btn gold" href="item.html">+ Add item</a></div>
+</div></header>
+<main class="wrap">
+  <div id="banner" class="banner" hidden></div>
+  <section id="stats" class="stats" aria-label="Stock summary"></section>
+  <div class="tools">
+    <input id="q" type="search" placeholder="Search by name or category" aria-label="Search">
+    <select id="cat" aria-label="Category"></select>
+    <select id="sort" aria-label="Sort">
+      <option value="new">Newest first</option>
+      <option value="name">Name A–Z</option>
+      <option value="price">Price high to low</option>
+      <option value="stock">Lowest stock first</option>
+    </select>
+    <button id="view" type="button">List view</button>
+  </div>
+  <p id="count" class="count"></p>
+  <div id="items" class="grid"></div>
+  <footer class="backup">
+    <span id="source"></span>
+    <button id="export" type="button">Download a backup copy</button>
+    <label class="btn">Import items.json<input id="import" type="file" accept=".json" hidden></label>
+  </footer>
+</main>
+<div id="toast" role="status"></div>
+<script src="js/db.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
