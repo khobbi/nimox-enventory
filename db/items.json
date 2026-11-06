@@ -3,6 +3,36 @@
   "_developer": "HAYFORD EDOONU, +233553246379, edoonu@gmail.com",
   "items": [
     {
+      "id": "imw5gdmb0",
+      "name": "Samsung S3 (UK used)",
+      "category": "Phones",
+      "price": 250,
+      "cost": 0,
+      "qty": 20,
+      "low": 10,
+      "image": "ss3.webp"
+    },
+    {
+      "id": "imw5gc4vj",
+      "name": "Samsung A40 (UK Used)",
+      "category": "Phones",
+      "price": 600,
+      "cost": 0,
+      "qty": 1,
+      "low": 1,
+      "image": "IjjYBcxNQ5qKXXcb.medium"
+    },
+    {
+      "id": "imw5galmy",
+      "name": "Vodafone N9 Phone",
+      "category": "Phones",
+      "price": 650,
+      "cost": 0,
+      "qty": 25,
+      "low": 10,
+      "image": "vn91.jpg"
+    },
+    {
       "id": "imw599m8s",
       "name": "Car Charger",
       "category": "Accessories",
@@ -374,7 +404,7 @@
     },
     {
       "id": "imw4xm5p8",
-      "name": "Printer Cable 5m",
+      "name": "Printer (USB B) Cable 5m",
       "category": "Cables",
       "price": 120,
       "cost": 0,
@@ -474,7 +504,7 @@
     },
     {
       "id": "imw4w2hsq",
-      "name": "OTG",
+      "name": "OTG multi",
       "category": "Accessories",
       "price": 40,
       "cost": 0,
