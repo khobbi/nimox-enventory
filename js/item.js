@@ -1,5 +1,7 @@
 /* DEVELOPER: HAYFORD EDOONU | Phone: +233553246379 | Email: edoonu@gmail.com */
-start(() => {
+document.addEventListener('lockchange', () => { if (!Lock.unlocked()) location.reload(); });
+// Adding, editing and deleting items needs the owner PIN (when one is set).
+start(() => Lock.need(() => {
   const id = new URLSearchParams(location.search).get('id');
   const item = id ? DB.get(id) : null;
   const panel = $('#panel');
@@ -79,4 +81,4 @@ start(() => {
   };
 
   preview(); margin();
-});
+}));
