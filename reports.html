@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- DEVELOPER: HAYFORD EDOONU | Phone: +233553246379 | Email: edoonu@gmail.com -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reports – NIMOX ENTERPRISE</title>
+<script>try{var t=localStorage.getItem('nimox_theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="style/style.css">
+<script>/* If the browser refused style/style.css (a Windows file-type setting can do this when index.html is opened by double-click), load the built-in copy */if(!getComputedStyle(document.documentElement).getPropertyValue('--nx'))document.write('<script src="style/style.js"><\/script>')</script>
+</head>
+<body>
+<header class="top"><div class="wrap bar">
+  <a class="brand" href="index.html"><span class="mark">N</span><span>NIMOX ENTERPRISE<small>Inventory &amp; sales</small></span></a>
+  <nav class="nav" aria-label="Main"><a href="index.html">Items</a><a href="sale.html">New sale</a><a href="sales.html">Sales</a><a href="reports.html" aria-current="page">Reports</a></nav>
+  <div class="acts"><button id="theme" type="button" class="ghost" aria-label="Switch between dark and light theme"></button></div>
+</div></header>
+<main class="wrap">
+  <div id="banner" class="banner" hidden></div>
+  <div class="tools">
+    <select id="range" aria-label="Period">
+      <option value="today">Today</option><option value="yesterday">Yesterday</option><option value="week" selected>Last 7 days</option><option value="month">This month</option>
+      <option value="lastmonth">Last month</option><option value="year">This year</option><option value="all">All time</option><option value="custom">Custom dates…</option>
+    </select>
+    <span id="custom" class="dates" hidden><input type="date" id="from" aria-label="From date"><input type="date" id="to" aria-label="To date"></span>
+    <button id="csv" type="button">Download sales (Excel / CSV)</button>
+  </div>
+  <section id="kpis" class="stats rk" aria-label="Summary"></section>
+  <p id="note" class="count"></p>
+  <div id="rep"></div>
+  <footer class="credit">Developer: Hayford Edoonu</footer>
+</main>
+<div id="toast" role="status"></div>
+<script src="js/db.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/receipt.js"></script>
+<script src="js/reports.js"></script>
+<script>
+/* DEVELOPER: HAYFORD EDOONU | Phone: +233553246379 | Email: edoonu@gmail.com */
+/* If the style or script files are missing, say so in plain words instead of showing a bare page. */
+window.addEventListener('load', function () {
+  var bar = document.querySelector('.top');
+  var styled = bar && getComputedStyle(bar).position === 'sticky';
+  var running = typeof DB !== 'undefined' && typeof start === 'function';
+  if (styled && running) return;
+  var d = document.createElement('div');
+  d.setAttribute('style', 'position:fixed;left:0;right:0;bottom:0;z-index:99999;background:#b3261e;color:#fff;font:15px/1.5 Arial,sans-serif;padding:14px 18px');
+  d.innerHTML = '<b>NIMOX cannot find some of its files, so only the plain page is showing.</b><br>' +
+    '1. If you opened index.html from inside a .zip file: close it, right-click the .zip, choose <b>Extract All</b>, and open index.html from the extracted folder.<br>' +
+    '2. Keep the folders <b>js</b>, <b>style</b> and <b>db</b> in the same folder as index.html (do not copy index.html on its own).<br>' +
+    '3. Then press F5 to reload.';
+  document.body.appendChild(d);
+});
+</script>
+</body>
+</html>

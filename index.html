@@ -7,10 +7,12 @@
 <title>NIMOX ENTERPRISE – Inventory</title>
 <script>try{var t=localStorage.getItem('nimox_theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 <link rel="stylesheet" href="style/style.css">
+<script>/* If the browser refused style/style.css (a Windows file-type setting can do this when index.html is opened by double-click), load the built-in copy */if(!getComputedStyle(document.documentElement).getPropertyValue('--nx'))document.write('<script src="style/style.js"><\/script>')</script>
 </head>
 <body>
 <header class="top"><div class="wrap bar">
   <a class="brand" href="index.html"><span class="mark">N</span><span>NIMOX ENTERPRISE<small>Inventory</small></span></a>
+  <nav class="nav" aria-label="Main"><a href="index.html" aria-current="page">Items</a><a href="sale.html">New sale</a><a href="sales.html">Sales</a><a href="reports.html">Reports</a></nav>
   <div class="acts"><button id="theme" type="button" class="ghost" aria-label="Switch between dark and light theme"></button><a class="btn gold" href="item.html">+ Add item</a></div>
 </div></header>
 <main class="wrap">
@@ -29,14 +31,44 @@
   </div>
   <p id="count" class="count"></p>
   <div id="items" class="grid"></div>
-  <footer class="backup">
+  <footer class="backup" id="backup">
     <span id="source"></span>
     <button id="export" type="button">Download a backup copy</button>
-    <label class="btn">Import items.json<input id="import" type="file" accept=".json" hidden></label>
+    <button id="importBtn" type="button">Import items.json</button><input id="import" type="file" accept=".json" hidden>
   </footer>
+  <footer class="credit">Developer: Hayford Edoonu</footer>
 </main>
+<dialog id="detail" aria-label="Item details">
+  <div class="sheet">
+    <div id="dBody"></div>
+    <div class="dfoot">
+      <button type="button" id="dDel" class="danger">Delete</button>
+      <button type="button" id="dClose">Close</button>
+      <a id="dEdit" class="btn primary" href="item.html">✎ Edit item</a>
+    </div>
+  </div>
+</dialog>
+<button id="top" type="button" aria-label="Scroll to top" title="Back to top">↑</button>
 <div id="toast" role="status"></div>
 <script src="js/db.js"></script>
+<script src="js/menu.js"></script>
 <script src="js/app.js"></script>
+<script>
+/* DEVELOPER: HAYFORD EDOONU | Phone: +233553246379 | Email: edoonu@gmail.com */
+/* If the style or script files are missing, say so in plain words instead of showing a bare page. */
+window.addEventListener('load', function () {
+  var bar = document.querySelector('.top');
+  var styled = bar && getComputedStyle(bar).position === 'sticky';
+  var running = typeof DB !== 'undefined' && typeof start === 'function';
+  if (styled && running) return;
+  var d = document.createElement('div');
+  d.setAttribute('style', 'position:fixed;left:0;right:0;bottom:0;z-index:99999;background:#b3261e;color:#fff;font:15px/1.5 Arial,sans-serif;padding:14px 18px');
+  d.innerHTML = '<b>NIMOX cannot find some of its files, so only the plain page is showing.</b><br>' +
+    '1. If you opened index.html from inside a .zip file: close it, right-click the .zip, choose <b>Extract All</b>, and open index.html from the extracted folder.<br>' +
+    '2. Keep the folders <b>js</b>, <b>style</b> and <b>db</b> in the same folder as index.html (do not copy index.html on its own).<br>' +
+    '3. Then press F5 to reload.';
+  document.body.appendChild(d);
+});
+</script>
 </body>
 </html>

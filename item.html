@@ -7,10 +7,12 @@
 <title>Item – NIMOX ENTERPRISE</title>
 <script>try{var t=localStorage.getItem('nimox_theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 <link rel="stylesheet" href="style/style.css">
+<script>/* If the browser refused style/style.css (a Windows file-type setting can do this when index.html is opened by double-click), load the built-in copy */if(!getComputedStyle(document.documentElement).getPropertyValue('--nx'))document.write('<script src="style/style.js"><\/script>')</script>
 </head>
 <body>
 <header class="top"><div class="wrap bar">
   <a class="brand" href="index.html"><span class="mark">N</span><span>NIMOX ENTERPRISE<small>Inventory</small></span></a>
+  <nav class="nav" aria-label="Main"><a href="index.html">Items</a><a href="sale.html">New sale</a><a href="sales.html">Sales</a><a href="reports.html">Reports</a></nav>
   <div class="acts"><button id="theme" type="button" class="ghost" aria-label="Switch between dark and light theme"></button><a class="btn ghost" href="index.html">Back to items</a></div>
 </div></header>
 <main class="wrap narrow">
@@ -25,8 +27,8 @@
           <button id="clear" type="button" class="quiet">Remove photo</button>
         </div>
         <div class="fields">
-          <label class="full">Item name<input name="name" required placeholder="e.g. Parboiled Rice 5kg"></label>
-          <label class="full">Category<input name="category" list="cats" placeholder="e.g. Groceries"></label>
+          <label class="full">Item name<input name="name" required placeholder="e.g. Samsung Galaxy A15 128GB"></label>
+          <label class="full">Category<input name="category" list="cats" placeholder="e.g. Phone Chargers"></label>
           <datalist id="cats"></datalist>
           <label>Selling price (GH₵)<input name="price" type="number" step="0.01" min="0" required inputmode="decimal"></label>
           <label>Cost price (GH₵)<input name="cost" type="number" step="0.01" min="0" inputmode="decimal"></label>
@@ -35,7 +37,7 @@
             <span class="step"><button type="button" id="qm" aria-label="Remove one">−</button><input name="qty" type="number" step="1" min="0" value="0" required inputmode="numeric"><button type="button" id="qp" aria-label="Add one">+</button></span>
           </label>
           <label>Low-stock alert at<input name="low" type="number" step="1" min="0" value="5" inputmode="numeric"></label>
-          <label class="full">Photo file name <span class="hint">(from the images folder, optional)</span><input name="image" placeholder="e.g. rice.jpg"></label>
+          <label class="full">Photo file name <span class="hint">(from the images folder, optional)</span><input name="image" placeholder="e.g. a15.jpg"></label>
         </div>
       </div>
       <div class="actions">
@@ -45,9 +47,28 @@
       </div>
     </form>
   </div>
+  <footer class="credit">Developer: Hayford Edoonu</footer>
 </main>
 <div id="toast" role="status"></div>
 <script src="js/db.js"></script>
+<script src="js/menu.js"></script>
 <script src="js/item.js"></script>
+<script>
+/* DEVELOPER: HAYFORD EDOONU | Phone: +233553246379 | Email: edoonu@gmail.com */
+/* If the style or script files are missing, say so in plain words instead of showing a bare page. */
+window.addEventListener('load', function () {
+  var bar = document.querySelector('.top');
+  var styled = bar && getComputedStyle(bar).position === 'sticky';
+  var running = typeof DB !== 'undefined' && typeof start === 'function';
+  if (styled && running) return;
+  var d = document.createElement('div');
+  d.setAttribute('style', 'position:fixed;left:0;right:0;bottom:0;z-index:99999;background:#b3261e;color:#fff;font:15px/1.5 Arial,sans-serif;padding:14px 18px');
+  d.innerHTML = '<b>NIMOX cannot find some of its files, so only the plain page is showing.</b><br>' +
+    '1. If you opened index.html from inside a .zip file: close it, right-click the .zip, choose <b>Extract All</b>, and open index.html from the extracted folder.<br>' +
+    '2. Keep the folders <b>js</b>, <b>style</b> and <b>db</b> in the same folder as index.html (do not copy index.html on its own).<br>' +
+    '3. Then press F5 to reload.';
+  document.body.appendChild(d);
+});
+</script>
 </body>
 </html>

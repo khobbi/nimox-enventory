@@ -1,12 +1,34 @@
 #!/usr/bin/env python3
 # DEVELOPER: HAYFORD EDOONU | Phone: +233553246379 | Email: edoonu@gmail.com
-"""NIMOX Inventory: serves this folder and saves every change to db/items.json.
+"""NIMOX Inventory: serves this folder and saves every change (items and sales) to db/items.json.
 Uses only Python's standard library, so there is nothing to install."""
-import base64, http.server, json, os, re, socket
+import base64, datetime, http.server, json, os, re, shutil, socket, threading
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DB = os.path.join(ROOT, 'db', 'items.json')
+BACKUPS = os.path.join(ROOT, 'db', 'backups')
 PORT = 8000
+LOCK = threading.Lock()
+
+
+def read_state():
+    try:
+        with open(DB, encoding='utf-8') as f:
+            return json.load(f)
+    except FileNotFoundError:
+        return {'items': []}
+
+
+def daily_backup():
+    """Keeps a copy of the data file from the start of each day (the last 60 days)."""
+    if not os.path.exists(DB):
+        return
+    os.makedirs(BACKUPS, exist_ok=True)
+    dst = os.path.join(BACKUPS, 'items-%s.json' % datetime.date.today().isoformat())
+    if not os.path.exists(dst):
+        shutil.copyfile(DB, dst)
+        for old in sorted(os.listdir(BACKUPS))[:-60]:
+            os.remove(os.path.join(BACKUPS, old))
 
 
 class Handler(http.server.SimpleHTTPRequestHandler):
@@ -27,11 +49,8 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 
     def do_GET(self):
         if self.path.split('?')[0] == '/api/items':
-            try:
-                with open(DB, encoding='utf-8') as f:
-                    self.reply(200, json.load(f))
-            except FileNotFoundError:
-                self.reply(200, {'items': []})
+            with LOCK:
+                self.reply(200, read_state())
         else:
             super().do_GET()
 
@@ -42,11 +61,18 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             if path == '/api/items':
                 if not isinstance(data.get('items'), list):
                     raise ValueError('items list missing')
-                tmp = DB + '.tmp'
-                with open(tmp, 'w', encoding='utf-8') as f:
-                    json.dump(data, f, indent=2, ensure_ascii=False)
-                os.replace(tmp, DB)
-                self.reply(200, {'ok': True})
+                with LOCK:
+                    current = int(read_state().get('rev', 0))
+                    if int(data.get('rev', 0)) != current:      # another device saved first
+                        self.reply(409, {'error': 'conflict'})
+                        return
+                    data['rev'] = current + 1
+                    daily_backup()
+                    tmp = DB + '.tmp'
+                    with open(tmp, 'w', encoding='utf-8') as f:
+                        json.dump(data, f, indent=2, ensure_ascii=False)
+                    os.replace(tmp, DB)
+                self.reply(200, {'ok': True, 'rev': data['rev']})
             elif path == '/api/image':
                 name = re.sub(r'[^A-Za-z0-9_-]', '', data['name'].rsplit('.', 1)[0])[:40] or 'photo'
                 raw = base64.b64decode(data['data'].split(',', 1)[1])
@@ -75,7 +101,7 @@ if __name__ == '__main__':
     os.makedirs(os.path.dirname(DB), exist_ok=True)
     srv = http.server.ThreadingHTTPServer(('0.0.0.0', PORT), Handler)
     print('NIMOX Inventory is running.')
-    print(f'  On this computer:           http://localhost:{PORT}')
+    print(f'  On this computer:            http://localhost:{PORT}')
     print(f'  On phones on the same Wi-Fi: http://{lan_ip()}:{PORT}')
     print('Press Ctrl+C to stop.')
     try:
