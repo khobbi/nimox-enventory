@@ -1,15 +1,707 @@
 {
   "shop": "NIMOX ENTERPRISE",
   "_developer": "HAYFORD EDOONU, +233553246379, edoonu@gmail.com",
+  "rev": 126,
+  "pin": null,
   "items": [
+    {
+      "id": "imw8e5yeb",
+      "name": "Yam Android Charger",
+      "category": "Phone Chargers",
+      "price": 30,
+      "cost": 0,
+      "qty": 10,
+      "low": 8,
+      "image": "pmw8eekqc.jpg"
+    },
+    {
+      "id": "imw7mmdtp",
+      "name": "32GB PEN DRIVE",
+      "category": "Accessories",
+      "price": 80,
+      "cost": 0,
+      "qty": 20,
+      "low": 10,
+      "image": "flashdriveimages.jpg"
+    },
+    {
+      "id": "imw7lc35z",
+      "name": "iPhone 6s (UK used)",
+      "category": "Phones",
+      "price": 800,
+      "cost": 0,
+      "qty": 1,
+      "low": 1,
+      "image": "111952_SP726-iphone6s-gray-select-2015.png"
+    },
+    {
+      "id": "imw7lb2p9",
+      "name": "SAMSUNG Galaxy J3 2016 (UK used)",
+      "category": "Phones",
+      "price": 280,
+      "cost": 0,
+      "qty": 1,
+      "low": 1,
+      "image": "sss-l1200.jpg"
+    },
+    {
+      "id": "imw7l9wbp",
+      "name": "SAMSUNG Galaxy J5 2015 (UK used)",
+      "category": "Phones",
+      "price": 300,
+      "cost": 0,
+      "qty": 1,
+      "low": 1,
+      "image": "81OGK84KxoL.jpg"
+    },
+    {
+      "id": "imw7l8ya6",
+      "name": "SAMSUNG Galaxy A5 2016 (UK used)",
+      "category": "Phones",
+      "price": 400,
+      "cost": 0,
+      "qty": 2,
+      "low": 1,
+      "image": "71J5ipM6VQL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "imw7l74pn",
+      "name": "SAMSUNG Galaxy S7 (UK used)",
+      "category": "Phones",
+      "price": 500,
+      "cost": 0,
+      "qty": 1,
+      "low": 1,
+      "image": "samsung-galaxy-s7-1.jpg"
+    },
+    {
+      "id": "imw7l57v3",
+      "name": "SAMSUNG Galaxy S4 Mini (UK used)",
+      "category": "Phones",
+      "price": 400,
+      "cost": 0,
+      "qty": 3,
+      "low": 1,
+      "image": "81iQutLb5xL.jpg"
+    },
+    {
+      "id": "imw7l3k9n",
+      "name": "SONY EXPERIA S 2012 (UK used)",
+      "category": "Phones",
+      "price": 250,
+      "cost": 0,
+      "qty": 1,
+      "low": 0,
+      "image": "experias.jpeg"
+    },
+    {
+      "id": "imw7l255e",
+      "name": "iPhone XS (UK used)",
+      "category": "Phones",
+      "price": 1500,
+      "cost": 0,
+      "qty": 2,
+      "low": 1,
+      "image": "71-3DNnmJML.jpg"
+    },
+    {
+      "id": "imw7jlycx",
+      "name": "HDTV Video Capture",
+      "category": "Accessories",
+      "price": 70,
+      "cost": 0,
+      "qty": 4,
+      "low": 2,
+      "image": "37449523_NjIwLTgyNy00NmY4YTBmMDViLTE.webp"
+    },
+    {
+      "id": "imw7jkj3f",
+      "name": "USB to HDMI adapter",
+      "category": "Accessories",
+      "price": 90,
+      "cost": 0,
+      "qty": 3,
+      "low": 2,
+      "image": "61YNypiHM7L._SL1500_.jpg"
+    },
+    {
+      "id": "imw7jh8sh",
+      "name": "Mobile Phone LED Light VL-60BI",
+      "category": "Accessories",
+      "price": 70,
+      "cost": 0,
+      "qty": 3,
+      "low": 1,
+      "image": "Contact-us-4.webp"
+    },
+    {
+      "id": "imw7jge2d",
+      "name": "USB Type C Micro adapter",
+      "category": "Accessories",
+      "price": 40,
+      "cost": 0,
+      "qty": 5,
+      "low": 3,
+      "image": "usbcm.jpg"
+    },
+    {
+      "id": "imw7jejxd",
+      "name": "Wireless Microphone Handheld Stick",
+      "category": "Accessories",
+      "price": 50,
+      "cost": 0,
+      "qty": 5,
+      "low": 2,
+      "image": "micstick1.jpg"
+    },
+    {
+      "id": "imw7jdp9a",
+      "name": "Mobile Phone stent",
+      "category": "Phone Holders and Stands",
+      "price": 50,
+      "cost": 0,
+      "qty": 5,
+      "low": 0,
+      "image": "16889970462P07PhCv.png"
+    },
+    {
+      "id": "imw7jbmw0",
+      "name": "V13 Phone Game Pad",
+      "category": "Game Pads",
+      "price": 120,
+      "cost": 0,
+      "qty": 3,
+      "low": 2,
+      "image": "60680451_NjIwLTU5MS02MGYwMTlmMTZk.webp"
+    },
+    {
+      "id": "imw7jabyp",
+      "name": "Screw Driver set SW-8600",
+      "category": "Accessories",
+      "price": 100,
+      "cost": 0,
+      "qty": 2,
+      "low": 2,
+      "image": "42366977_NjIwLTgyNy1hYmY5MmM0MmVi.webp"
+    },
+    {
+      "id": "imw7j8ljd",
+      "name": "Type C & USB3.0 to HUB 7 in 1",
+      "category": "Accessories",
+      "price": 120,
+      "cost": 0,
+      "qty": 5,
+      "low": 3,
+      "image": "61YhimUKCaL.jpg"
+    },
+    {
+      "id": "imw7j79bj",
+      "name": "Cat6 RJ45 (pieces)",
+      "category": "Accessories",
+      "price": 0.5,
+      "cost": 0,
+      "qty": 200,
+      "low": 50,
+      "image": "rj-connector.jpg"
+    },
+    {
+      "id": "imw7j5chq",
+      "name": "Network Cable Tester",
+      "category": "Accessories",
+      "price": 80,
+      "cost": 0,
+      "qty": 5,
+      "low": 3,
+      "image": "518AIFnfjDL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "imw7j3qs0",
+      "name": "DESKTOP PHONE BRACKET",
+      "category": "Accessories",
+      "price": 80,
+      "cost": 0,
+      "qty": 2,
+      "low": 2,
+      "image": "stand-metal-desktop-phone-holder-universal-rotation-folding-original-imah5yyvrzqrqe7u.jpeg"
+    },
+    {
+      "id": "imw7j2wvv",
+      "name": "HDMI SPLITTER 2 ports",
+      "category": "Accessories",
+      "price": 120,
+      "cost": 0,
+      "qty": 2,
+      "low": 2,
+      "image": "4ab6ee23aed06a48795271dc196178e4e1e5b8fe_332712_v4_1.jpg"
+    },
+    {
+      "id": "imw7j1sic",
+      "name": "HDMI SPLITTER 4 ports",
+      "category": "Accessories",
+      "price": 150,
+      "cost": 0,
+      "qty": 2,
+      "low": 1,
+      "image": "HDMI-Splitter.jpg"
+    },
+    {
+      "id": "imw7iyacr",
+      "name": "Aluminum Laptop Stand",
+      "category": "Accessories",
+      "price": 100,
+      "cost": 0,
+      "qty": 5,
+      "low": 4,
+      "image": "61THE7FU5KL.jpg"
+    },
+    {
+      "id": "imw7iwz1d",
+      "name": "OALE iMax 5 Games Projector",
+      "category": "Accessories",
+      "price": 700,
+      "cost": 0,
+      "qty": 3,
+      "low": 1,
+      "image": "proj1.jpg"
+    },
+    {
+      "id": "imw7ivags",
+      "name": "Bicycle phone holder",
+      "category": "Phone Holders and Stands",
+      "price": 30,
+      "cost": 0,
+      "qty": 10,
+      "low": 5,
+      "image": "phoneholder1.jpg"
+    },
+    {
+      "id": "imw7is6vf",
+      "name": "Car Bluetooth receiver",
+      "category": "Accessories",
+      "price": 40,
+      "cost": 0,
+      "qty": 5,
+      "low": 3,
+      "image": "X6-Bluetooth-Wireless-Receiver.jpg"
+    },
+    {
+      "id": "imw7iogco",
+      "name": "Type C Ethernet adapter",
+      "category": "Accessories",
+      "price": 100,
+      "cost": 0,
+      "qty": 3,
+      "low": 2,
+      "image": "prod_6a15a7f77432a.png"
+    },
+    {
+      "id": "imw7impkv",
+      "name": "Anycast M9 Plus",
+      "category": "Accessories",
+      "price": 80,
+      "cost": 0,
+      "qty": 3,
+      "low": 2,
+      "image": "N50970864A_1.jpg"
+    },
+    {
+      "id": "imw7ilddq",
+      "name": "WiFi 802.11N adapter",
+      "category": "Accessories",
+      "price": 80,
+      "cost": 0,
+      "qty": 10,
+      "low": 5,
+      "image": "51Cd2sPo3RL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "imw7ik5tj",
+      "name": "Ethernet to USB adapter",
+      "category": "Accessories",
+      "price": 80,
+      "cost": 0,
+      "qty": 4,
+      "low": 3,
+      "image": "Duronic_USB_Ethernet_Cable_Adaptor_942x813.jpg"
+    },
+    {
+      "id": "imw7igy3s",
+      "name": "Bluetooth Adapter",
+      "category": "Accessories",
+      "price": 50,
+      "cost": 0,
+      "qty": 10,
+      "low": 5,
+      "image": "Bluetooth-USB-5-0-Adapter-PC-Bluetooth-Adapter-for-PC-for-Win10-8-Ransmitter-Support-Multiple-Device-Connections-Headset-Mouse-Keyboard-Stereophone.webp"
+    },
+    {
+      "id": "imw7iea3o",
+      "name": "SAMSUNG SCover",
+      "category": "Phones",
+      "price": 200,
+      "cost": 0,
+      "qty": 2,
+      "low": 1,
+      "image": "africa-en_GT-S7710TAAXFE_001_Front_silver_10029920061622.png"
+    },
+    {
+      "id": "imw7ibt03",
+      "name": "Motorola RAZR",
+      "category": "Phones",
+      "price": 250,
+      "cost": 0,
+      "qty": 1,
+      "low": 1,
+      "image": "motorola-razr.jpg"
+    },
+    {
+      "id": "imw7i9r1d",
+      "name": "iPhone X charger",
+      "category": "Phone Chargers",
+      "price": 80,
+      "cost": 0,
+      "qty": 2,
+      "low": 2,
+      "image": "iphone-x-lighting-to-usb-cable.jpg"
+    },
+    {
+      "id": "imw7i1jg0",
+      "name": "iPhone 14 Pro Max 35w USB-C Power Adapter",
+      "category": "Phone Chargers",
+      "price": 100,
+      "cost": 0,
+      "qty": 3,
+      "low": 2,
+      "image": "6e6d9f705f364bae99da9d9af7f70bc3.png"
+    },
+    {
+      "id": "imw7hyz11",
+      "name": "SMART SUNGLASSES",
+      "category": "Accessories",
+      "price": 250,
+      "cost": 0,
+      "qty": 2,
+      "low": 2,
+      "image": "sungimages.jpg"
+    },
+    {
+      "id": "imw7hxmxf",
+      "name": "Pro 5s",
+      "category": "Bluetooth Handsfree",
+      "price": 230,
+      "cost": 0,
+      "qty": 2,
+      "low": 2,
+      "image": "pro5s1.jpg"
+    },
+    {
+      "id": "imw7hv19s",
+      "name": "oraimo Air 12 Pro",
+      "category": "Bluetooth Handsfree",
+      "price": 200,
+      "cost": 0,
+      "qty": 3,
+      "low": 2,
+      "image": "31637692_NjIwLTgyNy05NGQ0NTNiN2YwLTE.webp"
+    },
+    {
+      "id": "imw7htcmy",
+      "name": "JBL MINI M3 portable speaker",
+      "category": "Bluetooth Handsfree",
+      "price": 90,
+      "cost": 0,
+      "qty": 2,
+      "low": 1,
+      "image": "51PXwI+E7cL.jpg"
+    },
+    {
+      "id": "imw7hq4wz",
+      "name": "B63 wireless earbuds",
+      "category": "Bluetooth Handsfree",
+      "price": 200,
+      "cost": 0,
+      "qty": 2,
+      "low": 2,
+      "image": "172927879544862.jpg"
+    },
+    {
+      "id": "imw7hnmu5",
+      "name": "OALE iFree 25",
+      "category": "Bluetooth Handsfree",
+      "price": 200,
+      "cost": 0,
+      "qty": 4,
+      "low": 3,
+      "image": "ifree25images.jpg"
+    },
+    {
+      "id": "imw7hmrbu",
+      "name": "OALE iFree 24",
+      "category": "Bluetooth Handsfree",
+      "price": 180,
+      "cost": 0,
+      "qty": 5,
+      "low": 3,
+      "image": "qJjAi81PQTuBvKVcv2YNBLF6AArMncletXev28LiBBxqxsgvSO.jpg"
+    },
+    {
+      "id": "imw7hkqlt",
+      "name": "DF91 Portable high speed fan",
+      "category": "Phone Holders and Stands",
+      "price": 170,
+      "cost": 0,
+      "qty": 6,
+      "low": 3,
+      "image": "fan1images.jpg"
+    },
+    {
+      "id": "imw7hi5wr",
+      "name": "JH18 3IN1 selfie stick",
+      "category": "Phone Holders and Stands",
+      "price": 120,
+      "cost": 0,
+      "qty": 3,
+      "low": 2,
+      "image": "58460275_NjIwLTgyNy02N2Q5MzczZTIxLTE.webp"
+    },
+    {
+      "id": "imw7hejdf",
+      "name": "STAND SELFIE STICK R16S",
+      "category": "Phone Holders and Stands",
+      "price": 80,
+      "cost": 0,
+      "qty": 5,
+      "low": 3,
+      "image": "r16s2.jpg"
+    },
+    {
+      "id": "imw7gw4t1",
+      "name": "CALUS FAST 10max",
+      "category": "Power Banks",
+      "price": 150,
+      "cost": 0,
+      "qty": 1,
+      "low": 1,
+      "image": "12839208_NjIwLTgyNy1jZDIxODRiNTNl.webp"
+    },
+    {
+      "id": "imw7gsnu8",
+      "name": "OALE iPower 500",
+      "category": "Power Banks",
+      "price": 300,
+      "cost": 0,
+      "qty": 5,
+      "low": 2,
+      "image": "oale-20000-ipower-500-powerbank.jpg"
+    },
+    {
+      "id": "imw7gpt29",
+      "name": "OALE iPower Q50000",
+      "category": "Power Banks",
+      "price": 370,
+      "cost": 0,
+      "qty": 2,
+      "low": 1,
+      "image": "q50000images.jpg"
+    },
+    {
+      "id": "imw7gnsj2",
+      "name": "OALE iPower P60000",
+      "category": "Power Banks",
+      "price": 400,
+      "cost": 0,
+      "qty": 1,
+      "low": 1,
+      "image": "p60000images.jpg"
+    },
+    {
+      "id": "imw7gg5k1",
+      "name": "F15-2 wireless microphone",
+      "category": "Accessories",
+      "price": 300,
+      "cost": 0,
+      "qty": 3,
+      "low": 2,
+      "image": "f15-2.jpg"
+    },
+    {
+      "id": "imw6yc01x",
+      "name": "Bilatte BLT-13 wireless microphone",
+      "category": "Accessories",
+      "price": 120,
+      "cost": 0,
+      "qty": 2,
+      "low": 1,
+      "image": "btimages.jpg"
+    },
+    {
+      "id": "imw6y9lqy",
+      "name": "K31 PRO iOS, Type C Plug",
+      "category": "Accessories",
+      "price": 200,
+      "cost": 0,
+      "qty": 1,
+      "low": 1,
+      "image": "k31pro.jpg"
+    },
+    {
+      "id": "imw6y6kiz",
+      "name": "OALE iPower x20000",
+      "category": "Power Banks",
+      "price": 120,
+      "cost": 0,
+      "qty": 1,
+      "low": 1,
+      "image": "195779_1776598321.jpg"
+    },
+    {
+      "id": "imw6y3zl2",
+      "name": "OALE iMagsafe 2",
+      "category": "Power Banks",
+      "price": 120,
+      "cost": 0,
+      "qty": 1,
+      "low": 1,
+      "image": "62417207_NjIwLTgyNy0zYWJhNDk2MjRl.webp"
+    },
+    {
+      "id": "imw6y1kr4",
+      "name": "CALUS P173 Max 1000mAh",
+      "category": "Power Banks",
+      "price": 180,
+      "cost": 0,
+      "qty": 1,
+      "low": 1,
+      "image": "p173images.jpg"
+    },
+    {
+      "id": "imw6xllgp",
+      "name": "Earpiece normal",
+      "category": "Accessories",
+      "price": 25,
+      "cost": 0,
+      "qty": 10,
+      "low": 5,
+      "image": "normalearimages.jpg"
+    },
+    {
+      "id": "imw6xk6xl",
+      "name": "Samsung AKG Earpiece Type C",
+      "category": "Accessories",
+      "price": 30,
+      "cost": 0,
+      "qty": 8,
+      "low": 4,
+      "image": "2b4b5281-1360-55e9-9395-48cde71f08a0.jpg"
+    },
+    {
+      "id": "imw6xhrzb",
+      "name": "OALE iPower Pocket 1",
+      "category": "Power Banks",
+      "price": 100,
+      "cost": 0,
+      "qty": 3,
+      "low": 1,
+      "image": "ipowerp1images.jpg"
+    },
+    {
+      "id": "imw6xe4ad",
+      "name": "360 car mount phone holder",
+      "category": "Phone Holders and Stands",
+      "price": 50,
+      "cost": 0,
+      "qty": 5,
+      "low": 2,
+      "image": "71eWlePM3-L.jpg"
+    },
+    {
+      "id": "imw6xbwkj",
+      "name": "AfriLink 4G Mifi",
+      "category": "Accessories",
+      "price": 150,
+      "cost": 0,
+      "qty": 4,
+      "low": 2,
+      "image": "b1feae55-eddd-4ad3-a30c-2f1087a93dd8.png"
+    },
+    {
+      "id": "imw6xalcg",
+      "name": "SVGA Cable 5m",
+      "category": "Cables",
+      "price": 90,
+      "cost": 0,
+      "qty": 5,
+      "low": 2,
+      "image": "2l-2530.cables.vga-cables.45.jpg"
+    },
+    {
+      "id": "imw6x9i0u",
+      "name": "VGA Cable 1.5m",
+      "category": "Cables",
+      "price": 50,
+      "cost": 0,
+      "qty": 5,
+      "low": 2,
+      "image": "2l-2530.cables.vga-cables.45.jpg"
+    },
+    {
+      "id": "imw6x833o",
+      "name": "Ethernet Cable Cat6 5m",
+      "category": "Cables",
+      "price": 100,
+      "cost": 0,
+      "qty": 4,
+      "low": 2,
+      "image": "9f29d5635887547c705efbee50166edc.jpg_720x720q80.jpg"
+    },
+    {
+      "id": "imw6jvoge",
+      "name": "Crimping Tool",
+      "category": "Accessories",
+      "price": 70,
+      "cost": 0,
+      "qty": 3,
+      "low": 1,
+      "image": "s-crimpingtool.webp"
+    },
+    {
+      "id": "imw6ju6h4",
+      "name": "Type C to HDTV 8 in 1 Adapter",
+      "category": "Accessories",
+      "price": 80,
+      "cost": 0,
+      "qty": 5,
+      "low": 2,
+      "image": "typechdtvimages.jpg"
+    },
+    {
+      "id": "imw6jt38n",
+      "name": "Screw driver set 1",
+      "category": "Accessories",
+      "price": 120,
+      "cost": 0,
+      "qty": 3,
+      "low": 2,
+      "image": "rs_w_1200_h_1200_3d5d66e6-2da1-440b-a15a-0f9780368903.webp"
+    },
+    {
+      "id": "imw6jrqh6",
+      "name": "Samsung 45W Power Adapter Type C to C",
+      "category": "Phone Chargers",
+      "price": 50,
+      "cost": 0,
+      "qty": 10,
+      "low": 5,
+      "image": "45wpdpower.jpg"
+    },
     {
       "id": "imw5gdmb0",
       "name": "Samsung S3 (UK used)",
       "category": "Phones",
       "price": 250,
       "cost": 0,
-      "qty": 20,
-      "low": 10,
+      "qty": 25,
+      "low": 15,
       "image": "ss3.webp"
     },
     {
@@ -36,9 +728,9 @@
       "id": "imw599m8s",
       "name": "Car Charger",
       "category": "Accessories",
-      "price": 40,
+      "price": 45,
       "cost": 0,
-      "qty": 5,
+      "qty": 6,
       "low": 3,
       "image": "3PRT_CAR_CGR_Main_1.jpg"
     },
@@ -86,7 +778,7 @@
       "id": "imw58ufit",
       "name": "Type C to C cable",
       "category": "Cables",
-      "price": 40,
+      "price": 35,
       "cost": 0,
       "qty": 30,
       "low": 15,
@@ -124,7 +816,7 @@
     },
     {
       "id": "imw58qbja",
-      "name": "iPhone (Thunderbolt) cable",
+      "name": "iPhone (Lightning) cable",
       "category": "Cables",
       "price": 30,
       "cost": 0,
@@ -259,12 +951,12 @@
       "price": 100,
       "cost": 0,
       "qty": 4,
-      "low": 25,
+      "low": 2,
       "image": "2998_ps3.jpg"
     },
     {
       "id": "imw51tspq",
-      "name": "64GB FLASH DRIVE",
+      "name": "64GB PEN DRIVE",
       "category": "Accessories",
       "price": 90,
       "cost": 0,
@@ -274,7 +966,7 @@
     },
     {
       "id": "imw51sly9",
-      "name": "16GB FLASH DRIVE",
+      "name": "16GB PEN DRIVE",
       "category": "Accessories",
       "price": 70,
       "cost": 0,
@@ -284,7 +976,7 @@
     },
     {
       "id": "imw51r6wb",
-      "name": "8GB FLASH DRIVE",
+      "name": "8GB PEN DRIVE",
       "category": "Accessories",
       "price": 60,
       "cost": 0,
@@ -294,7 +986,7 @@
     },
     {
       "id": "imw51qhqs",
-      "name": "4GB FLASH DRIVE",
+      "name": "4GB PEN DRIVE",
       "category": "Accessories",
       "price": 55,
       "cost": 0,
@@ -304,7 +996,7 @@
     },
     {
       "id": "imw51pm7k",
-      "name": "128GB FLASH DRIVE",
+      "name": "128GB PEN DRIVE",
       "category": "Accessories",
       "price": 180,
       "cost": 0,
@@ -314,7 +1006,7 @@
     },
     {
       "id": "imw51n937",
-      "name": "2GB FLASH DRIVE",
+      "name": "2GB PEN DRIVE",
       "category": "Accessories",
       "price": 50,
       "cost": 0,
@@ -324,7 +1016,7 @@
     },
     {
       "id": "imw51lapm",
-      "name": "64GB CAMERA MEMORY",
+      "name": "64GB CAMERA MEMORY CARD",
       "category": "Accessories",
       "price": 200,
       "cost": 0,
@@ -334,7 +1026,7 @@
     },
     {
       "id": "imw51kceh",
-      "name": "32GB CAMERA MEMORY",
+      "name": "32GB CAMERA MEMORY CARD",
       "category": "Accessories",
       "price": 100,
       "cost": 0,
@@ -344,7 +1036,7 @@
     },
     {
       "id": "imw51i6ig",
-      "name": "32 SD CARD",
+      "name": "32GB SD CARD",
       "category": "Accessories",
       "price": 85,
       "cost": 0,
@@ -414,7 +1106,7 @@
     },
     {
       "id": "imw4xlbdr",
-      "name": "Printer Cable 1.5m",
+      "name": "Printer (USB B) Cable 1.5m",
       "category": "Cables",
       "price": 50,
       "cost": 0,
@@ -504,7 +1196,7 @@
     },
     {
       "id": "imw4w2hsq",
-      "name": "OTG multi",
+      "name": "OTG card reader 3in1 multi",
       "category": "Accessories",
       "price": 40,
       "cost": 0,
@@ -516,7 +1208,7 @@
       "id": "imw4vzg4j",
       "name": "iPhone 17 Pro Max USB-C  35W",
       "category": "Phone Chargers",
-      "price": 50,
+      "price": 100,
       "cost": 0,
       "qty": 10,
       "low": 5,
@@ -544,7 +1236,7 @@
     },
     {
       "id": "imw416gut",
-      "name": "SONY PS 4 game pad",
+      "name": "SONY PS4 game pad",
       "category": "Game Pads",
       "price": 200,
       "cost": 0,
@@ -742,5 +1434,6 @@
       "low": 1,
       "image": "images05.jpg"
     }
-  ]
+  ],
+  "sales": []
 }
